@@ -74,24 +74,26 @@ function CleanIntuitive() {
             <div
               className={clsx('-mt-8 flex gap-4', 'md:gap-6 lg:top-8 lg:mt-0')}
             >
-              {currentState && currentState.state === 'iot' && (
+              {currentState.state === 'iot' && (
                 <div>
                   <TodoItemIot state="iot" />
                 </div>
               )}
 
-              {currentState && currentState.state === 'digitaltwin' && (
+              {currentState.state === 'digitaltwin' && (
                 <div>
                   <TodoItemDT state="digitaltwin" />
                 </div>
               )}
 
-              {currentState && currentState.state === 'augment' && (
+              {currentState.state === 'augment' && (
                 <div>
                   <TodoItemAug state="augment" />
                 </div>
               )}
-
+              <div className={clsx('hidden', 'sm:block lg:hidden')}>
+                <TodoItemIot state="augment" />
+              </div>
               <div className={clsx('hidden', 'sm:block lg:hidden')}>
                 <TodoItem state={currentState ? currentState.state : 'iot'} />
               </div>
