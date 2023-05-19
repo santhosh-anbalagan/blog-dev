@@ -10,7 +10,6 @@ interface TodoItemProps {
   tag1?: string;
   tag2?: string;
 }
-
 function TodoItem({ state }: TodoItemProps) {
   return (
     <div

@@ -87,11 +87,6 @@ function CleanIntuitive() {
                       ? currentState.shows
                       : ['iot', 'digitaltwin', 'augment', 'effects']
                   }
-                  title="UI Implementation"
-                  description="Start creating UI components using React and Tailwind CSS."
-                  date="10:00 AM · Tomorrow"
-                  tag1="Design"
-                  tag2="Components"
                 />
               </div>
             </div>
