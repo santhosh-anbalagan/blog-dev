@@ -20,6 +20,7 @@ function TodoItem({ state }: TodoItemProps) {
       )}
       role="presentation"
     >
+      <div> Details:</div>
       {state === 'iot' && (
         <>
           <div
