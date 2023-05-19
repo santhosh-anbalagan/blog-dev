@@ -5,7 +5,7 @@ import { SectionButton } from '@/components/sections/SectionButton';
 import SectionContent from '@/components/sections/SectionContent';
 import SectionTitle from '@/components/sections/SectionTitle';
 
-import type { TodoItemState } from '@/contents/index/Cards/TodoItem';
+import type { TodoItemState } from '@/contents/index/Cards/TodoItemDT';
 import TodoItemIot from './Cards/TodoItemIot';
 import TodoItemAug from './Cards/TodoItemAug';
 import TodoItemDT from './Cards/TodoItemDT';
