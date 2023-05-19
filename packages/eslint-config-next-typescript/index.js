@@ -15,7 +15,6 @@ module.exports = {
     '@next/next/no-html-link-for-pages': ['error', 'apps/enji.dev/src/pages/'],
     'no-underscore-dangle': ['error', { allow: ['_count', '_sum'] }],
     'import/extensions': 'off',
-    'react/jsx-no-useless-fragment': [2, { allowExpressions: true }],
     'import/order': 'off',
     'import/prefer-default-export': 'off',
     'simple-import-sort/exports': 'warn',
