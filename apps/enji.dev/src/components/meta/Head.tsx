@@ -19,9 +19,7 @@ function Head({
 }: HeadProps) {
   const currentUrl = useCurrentUrl();
 
-  const htmlTitle = overrideTitle
-    ? title
-    : `${title} — Enji · Front-End Developer`;
+  const htmlTitle = overrideTitle ? title : `${title} — santhosh zooz`;
 
   return (
     <NextHead>

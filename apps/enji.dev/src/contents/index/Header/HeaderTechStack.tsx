@@ -2,13 +2,17 @@ import clsx from 'clsx';
 import { m } from 'framer-motion';
 
 import {
+  BimObjectIcon,
   FigmaIcon,
   FramerMotionIcon,
+  PythonIcon,
   NextJsIcon,
   ReactIcon,
+  SpringBootIcon,
   TailwindCssIcon,
   TypeScriptIcon,
   VSCodeIcon,
+  JetBrainsIcon,
 } from '@/components/Icons';
 
 const animation = {
@@ -28,7 +32,7 @@ function HeaderTechStack() {
         animate={animation.show}
         transition={{ delay: 0.6 }}
       >
-        current favorite tech stack/tools:
+        presently flexing stack/tools:
       </m.p>
       <m.ul
         className={clsx(
@@ -40,8 +44,8 @@ function HeaderTechStack() {
         transition={{ delayChildren: 0.6, staggerChildren: 0.025 }}
       >
         <m.li variants={animation}>
-          <div className={clsx('transition duration-200 hover:text-[#3178C6]')}>
-            <TypeScriptIcon className={clsx('h-6 w-6')} />
+          <div className={clsx('transition duration-200 hover:text-[#23b723]')}>
+            <SpringBootIcon className={clsx('h-6 w-6')} />
           </div>
         </m.li>
         <m.li variants={animation}>
@@ -50,13 +54,13 @@ function HeaderTechStack() {
           </div>
         </m.li>
         <m.li variants={animation}>
-          <div className={clsx('transition duration-200 hover:text-[#06B6D4]')}>
-            <TailwindCssIcon className={clsx('h-6 w-6')} />
+          <div className={clsx('transition duration-200 hover:text-[#4f95b7]')}>
+            <PythonIcon className={clsx('h-6 w-6')} />
           </div>
         </m.li>
         <m.li variants={animation}>
-          <div className={clsx('transition duration-200 hover:text-[#0055FF]')}>
-            <FramerMotionIcon className={clsx('h-6 w-6')} />
+          <div className={clsx('transition duration-200 hover:text-[#9aaab9]')}>
+            <BimObjectIcon className={clsx('h-6 w-6')} />
           </div>
         </m.li>
         <m.li variants={animation}>
@@ -77,8 +81,8 @@ function HeaderTechStack() {
           </div>
         </m.li>
         <m.li variants={animation}>
-          <div className={clsx('transition duration-200 hover:text-[#F24E1E]')}>
-            <FigmaIcon className={clsx('h-6 w-6')} />
+          <div className={clsx('transition duration-200 hover:text-[#020202]')}>
+            <JetBrainsIcon className={clsx('h-6 w-6')} />
           </div>
         </m.li>
       </m.ul>

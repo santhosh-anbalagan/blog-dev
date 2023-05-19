@@ -14,15 +14,6 @@ function ProjectsContents() {
 
   return (
     <>
-      <SectionTitle
-        title="The dynamic accent colors."
-        caption="tailwindcss-accent"
-        description="Add accent colors for dynamic, flexible color use in your Tailwind CSS project."
-        button={{
-          title: 'learn more',
-          href: '/docs/tailwindcss-accent',
-        }}
-      />
       <SectionContent>
         <div className={clsx('flex', 'lg:gap-12')}>
           <div className={clsx('hidden flex-1 flex-col gap-3 pt-8', 'lg:flex')}>
@@ -30,16 +21,9 @@ function ProjectsContents() {
               <SectionButton
                 title="Available on GitHub"
                 icon={<GitHubIcon className={clsx('my-2 h-16 w-16')} />}
-                description="Access powerful and flexible package on GitHub with MIT license."
+                description="Access my hobby projects on mutiple languages."
                 active={currentState === 'github'}
                 onClick={() => setCurrentState('github')}
-              />
-              <SectionButton
-                title="npm package"
-                icon={<NpmIcon className={clsx('my-2 h-16 w-16')} />}
-                description="Install and use the package with ease thanks to its typed options."
-                active={currentState === 'npm'}
-                onClick={() => setCurrentState('npm')}
               />
             </div>
           </div>
@@ -51,22 +35,17 @@ function ProjectsContents() {
                   browserTabs={[
                     {
                       icon: <GitHubIcon className="h-4 w-4" />,
-                      title: 'enjidev/tailwindcss-accent - GitHub',
+                      title: 'santhosh-anbalagan/blog-21 - GitHub',
                       isActive: currentState === 'github',
-                    },
-                    {
-                      icon: <NpmIcon className="h-4 w-4" />,
-                      title: 'tailwindcss-accent - npm',
-                      isActive: currentState === 'npm',
                     },
                   ]}
                 >
                   {currentState === 'github' && (
                     <GitHubWireframe
-                      author="enjidev"
-                      license="MIT"
-                      repository="tailwindcss-accent"
-                      description="Adds accent colors for more dynamic and flexible color utilization."
+                      author="santhosh-anbalagan"
+                      license=""
+                      repository="blog-21"
+                      description="A personal blog using Fjord Next.js."
                     />
                   )}
                   {currentState === 'npm' && (
