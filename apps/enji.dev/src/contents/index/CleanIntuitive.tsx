@@ -65,37 +65,6 @@ function CleanIntuitive() {
               />
             ))}
           </div>
-          <div
-            className={clsx('relative flex flex-1 items-center justify-center')}
-          >
-            <div
-              className={clsx('-mt-8 flex gap-4', 'md:gap-6 lg:top-8 lg:mt-0')}
-            >
-              <div>
-                <TodoItem
-                  state={
-                    currentState
-                      ? currentState.shows
-                      : ['iot', 'digitaltwin', 'augment', 'effects']
-                  }
-                />
-              </div>
-              <div className={clsx('hidden', 'sm:block lg:hidden')}>
-                <TodoItem
-                  state={
-                    currentState
-                      ? currentState.shows
-                      : ['iot', 'digitaltwin', 'augment', 'effects']
-                  }
-                  title="UI Implementation"
-                  description="Start creating UI components using React and Tailwind CSS."
-                  date="10:00 AM · Tomorrow"
-                  tag1="Design"
-                  tag2="Components"
-                />
-              </div>
-            </div>
-          </div>
         </div>
       </SectionContent>
     </>
