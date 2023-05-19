@@ -54,8 +54,8 @@ function HeaderImage() {
           >
             <Image
               alt="Santhosh Zooz"
-              src="/assets/images/me.png"
-              width={457}
+              src="/assets/images/sazzz.png"
+              width={560}
               height={526}
               className={clsx(
                 'hidden max-w-none',
