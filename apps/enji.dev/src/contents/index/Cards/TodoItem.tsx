@@ -3,7 +3,7 @@ import clsx from 'clsx';
 export type TodoItemState = 'digitaltwin' | 'iot' | 'augment' | 'effects';
 
 interface TodoItemProps {
-  state: Array<TodoItemState>;
+  state: string;
 }
 function TodoItem({ state }: TodoItemProps) {
   return (
@@ -20,8 +20,8 @@ function TodoItem({ state }: TodoItemProps) {
       )}
       role="presentation"
     >
-      {state.includes('iot') && (
-        <div>
+      {state == 'iot' && (
+        <>
           <div
             className={clsx(
               'flex items-center',
@@ -78,10 +78,10 @@ function TodoItem({ state }: TodoItemProps) {
           >
             {'Bacnet | Modbus | DALI | TCP | FTP'}
           </div>
-        </div>
+        </>
       )}
-      {state.includes('digitaltwin') && (
-        <div>
+      {state == 'digitaltwin' && (
+        <>
           <div
             className={clsx(
               'flex items-center',
@@ -121,10 +121,10 @@ function TodoItem({ state }: TodoItemProps) {
               {'BIM 360'}
             </div>
           </div>
-        </div>
+        </>
       )}
-      {state.includes('augment') && (
-        <div>
+      {state == 'augment' && (
+        <>
           <div
             className={clsx(
               'flex items-center',
@@ -164,7 +164,7 @@ function TodoItem({ state }: TodoItemProps) {
               {'Unity'}
             </div>
           </div>
-        </div>
+        </>
       )}
     </div>
   );
