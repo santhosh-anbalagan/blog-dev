@@ -5,10 +5,10 @@
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
     "clean": "turbo run clean",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "force": "turbo run build --force"
   },
   "devDependencies": {
-    "eslint": "^8.31.0",
     "prettier": "^2.8.1",
     "prettier-plugin-tailwindcss": "^0.2.1",
     "turbo": "latest"

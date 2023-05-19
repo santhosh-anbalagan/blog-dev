@@ -50,9 +50,9 @@ function Navbar() {
               <li>
                 <NavLink title="Projects" href="/projects" />
               </li>
-              <li>
+              {/* <li>
                 <NavLink title="Blog" href="/blog" />
-              </li>
+              </li> */}
               {/* <li>
                 <NavLink title="T.I.L" href="/today-i-learned" />
               </li> */}
