@@ -38,7 +38,7 @@ function TodoItemIot({ state }: TodoItemProps) {
             ]
           )}
         >
-          {'Kafka | MQTT'}
+          Kafka | MQTT
         </div>
         <div
           className={clsx(
@@ -50,7 +50,7 @@ function TodoItemIot({ state }: TodoItemProps) {
             ]
           )}
         >
-          {'RS485 | BLE'}
+          RS485 | BLE
         </div>
       </div>
       <div
@@ -63,7 +63,7 @@ function TodoItemIot({ state }: TodoItemProps) {
           ]
         )}
       >
-        {'Bacnet | Modbus | DALI | TCP | FTP'}
+        Bacnet | Modbus | DALI | TCP | FTP
       </div>
     </div>
   );

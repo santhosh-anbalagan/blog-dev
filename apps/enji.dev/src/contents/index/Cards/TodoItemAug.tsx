@@ -33,7 +33,7 @@ function TodoItemAug({ state }: TodoItemProps) {
             ]
           )}
         >
-          {'Autodesk Forge'}
+          Autodesk Forge
         </div>
         <div
           className={clsx(
@@ -45,7 +45,7 @@ function TodoItemAug({ state }: TodoItemProps) {
             ]
           )}
         >
-          {'Unity'}
+          Unity
         </div>
       </div>
     </div>

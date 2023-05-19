@@ -33,7 +33,7 @@ function TodoItemDT({ state }: TodoItemProps) {
             ]
           )}
         >
-          {'Autodesk Forge'}
+          Autodesk Forge
         </div>
         <div
           className={clsx(
@@ -45,7 +45,7 @@ function TodoItemDT({ state }: TodoItemProps) {
             ]
           )}
         >
-          {'BIM 360'}
+          BIM 360
         </div>
       </div>
     </div>
