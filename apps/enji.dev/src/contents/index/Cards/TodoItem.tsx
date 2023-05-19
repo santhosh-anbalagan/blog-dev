@@ -4,11 +4,6 @@ export type TodoItemState = 'digitaltwin' | 'iot' | 'augment' | 'effects';
 
 interface TodoItemProps {
   state: Array<TodoItemState>;
-  title?: string;
-  description?: string;
-  date?: string;
-  tag1?: string;
-  tag2?: string;
 }
 function TodoItem({ state }: TodoItemProps) {
   return (
