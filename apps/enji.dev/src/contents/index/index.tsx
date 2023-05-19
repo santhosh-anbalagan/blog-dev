@@ -24,8 +24,8 @@ function FeaturedCardSection() {
               <SparklesIcon className={clsx('h-5 w-5 text-white')} />
             </div>
           }
-          title="Clean & Intuitive"
-          desc="Keep the UI clean with a modern touch without compromising UX."
+          title="Entrepreneur"
+          desc="Co founder/CTO of Lattice Build Tech."
         />
         <FeaturedCard
           icon={
@@ -38,8 +38,8 @@ function FeaturedCardSection() {
               <HeartIcon className={clsx('h-5 w-5 text-white')} />
             </div>
           }
-          title="Detail Oriented"
-          desc="Awareness to ease of access, UI consistency, and improved UX."
+          title="Tech Savy"
+          desc="Immersed in the world of IoT, digital twins, and augmented reality, shaping the future through cutting-edge technology."
         />
         <FeaturedCard
           icon={
@@ -52,8 +52,8 @@ function FeaturedCardSection() {
               <CodeIcon className={clsx('h-5 w-5 text-white')} />
             </div>
           }
-          title="Pretty & Optimized"
-          desc="Writing clean code is a top priority while keeping it as optimized as possible."
+          title="Bibliophile"
+          desc="Reading the world of possibilites and reliving the history one page at a time."
         />
       </div>
     </div>

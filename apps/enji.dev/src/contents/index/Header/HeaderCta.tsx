@@ -36,7 +36,7 @@ function ButtonResume() {
     <a
       target="_blank"
       rel="noreferrer nofollow"
-      href="https://www.figma.com/community/file/1176377524040948926"
+      href="https://www.linkedin.com/in/santhoshzz/overlay/1614538731442/single-media-viewer/?type=DOCUMENT&profileId=ACoAACNveUsBf66btomtYhcUyOl1iIGuZsQWHN0"
       className={clsx('button button--ghost px-2', 'md:button--big md:px-2')}
     >
       <DocumentIcon className={clsx('h-5 w-5')} />
@@ -68,7 +68,7 @@ function AvailableForHire() {
           )}
         />
       </span>
-      AVAILABLE FOR HIRE
+      AVAILABLE FOR BRAINSTROM
     </div>
   );
 }

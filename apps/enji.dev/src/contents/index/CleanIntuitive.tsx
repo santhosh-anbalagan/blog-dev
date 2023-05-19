@@ -18,28 +18,22 @@ type Content = {
 
 const content: Array<Content> = [
   {
-    state: 'typography',
-    shows: ['typography'],
-    title: 'Typography',
-    description: 'Selecting the font type, font size, and font weight.',
+    state: 'iot',
+    shows: ['iot'],
+    title: 'IoT',
+    description: 'Sensors, Controllers & Gateway building.',
   },
   {
-    state: 'spacing',
-    shows: ['typography', 'spacing'],
-    title: 'Spacing',
-    description: 'Positioning and adding spacing between elements.',
+    state: 'digitaltwin',
+    shows: ['digitaltwin'],
+    title: 'Digital Twin',
+    description: 'With the aid of BIM monitoring and controlling.',
   },
   {
-    state: 'colors',
-    shows: ['typography', 'spacing', 'colors'],
-    title: 'Colors',
-    description: 'Choosing a color scheme with sufficient contrast.',
-  },
-  {
-    state: 'effects',
-    shows: ['typography', 'spacing', 'colors', 'effects'],
-    title: 'Effects',
-    description: 'Add effects like borders, shadows, rounded corners, etc.',
+    state: 'augment',
+    shows: ['augment'],
+    title: 'Augment Reality',
+    description: 'Virtual visualization of the completed construction.',
   },
 ];
 
@@ -50,10 +44,9 @@ function CleanIntuitive() {
     <>
       <header className={clsx('mb-8')}>
         <SectionTitle
-          title="Eye Catching, Modern & Minimalist Design."
-          caption="Clean & Intuitive"
-          description="Keep the User Interface clean with a modern touch without
-            compromising the User Experience."
+          title="Technology like art is a soaring excerise of the human imagination."
+          caption="Tech Savy"
+          description="I’m excited to explore the latest tech trends and get hands-on experience with cutting-edge technology."
         />
       </header>
       <SectionContent>
@@ -83,7 +76,7 @@ function CleanIntuitive() {
                   state={
                     currentState
                       ? currentState.shows
-                      : ['typography', 'spacing', 'colors', 'effects']
+                      : ['iot', 'digitaltwin', 'augment', 'effects']
                   }
                 />
               </div>
@@ -92,7 +85,7 @@ function CleanIntuitive() {
                   state={
                     currentState
                       ? currentState.shows
-                      : ['typography', 'spacing', 'colors', 'effects']
+                      : ['iot', 'digitaltwin', 'augment', 'effects']
                   }
                   title="UI Implementation"
                   description="Start creating UI components using React and Tailwind CSS."

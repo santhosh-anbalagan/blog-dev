@@ -53,9 +53,9 @@ function HeaderImage() {
             animate={controlsHeaderImage}
           >
             <Image
-              alt="Enji Kusnadi Illustration"
-              src="/assets/images/me.png"
-              width={457}
+              alt="Santhosh Zooz"
+              src="/assets/images/sazzz.png"
+              width={560}
               height={526}
               className={clsx(
                 'hidden max-w-none',
