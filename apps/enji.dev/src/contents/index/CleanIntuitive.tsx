@@ -5,8 +5,6 @@ import { SectionButton } from '@/components/sections/SectionButton';
 import SectionContent from '@/components/sections/SectionContent';
 import SectionTitle from '@/components/sections/SectionTitle';
 
-import TodoItem from '@/contents/index/Cards/TodoItem';
-
 import type { TodoItemState } from '@/contents/index/Cards/TodoItem';
 import TodoItemIot from './Cards/TodoItemIot';
 import TodoItemAug from './Cards/TodoItemAug';
@@ -93,9 +91,6 @@ function CleanIntuitive() {
               )}
               <div className={clsx('hidden', 'sm:block lg:hidden')}>
                 <TodoItemIot state="augment" />
-              </div>
-              <div className={clsx('hidden', 'sm:block lg:hidden')}>
-                <TodoItem state={currentState ? currentState.state : 'iot'} />
               </div>
             </div>
           </div>
