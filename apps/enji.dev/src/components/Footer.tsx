@@ -1,12 +1,7 @@
 import clsx from 'clsx';
 import Link from 'next/link';
 
-import {
-  ExternalLink,
-  FigmaIcon,
-  GitHubIcon,
-  TwitterIcon,
-} from '@/components/Icons';
+import { ExternalLink, LinkedInIcon } from '@/components/Icons';
 
 import dayjs from '@/utils/dayjs';
 
@@ -112,44 +107,21 @@ function FooterDescription() {
         About Me
       </div>
       <p className={clsx('mb-4 font-normal leading-relaxed')}>
-        I&apos;m Enji, a <strong>front-end developer</strong> who loves
-        intuitive, clean and modern UI design.
+        I&apos;m Santhosh, a <strong>tech-savvy</strong>,an{' '}
+        <strong>entrepreneur </strong> in making. Innovating, disrupting, and
+        leaving my mark on the world, one code at a time.
       </p>
       <ul className={clsx('-ml-2 flex gap-1')}>
         <li>
           <a
-            href="https://twitter.com/enjidev"
+            href="https://www.linkedin.com/in/santhoshzz"
             target="_blank"
             rel="noreferrer nofollow"
             className={clsx('flex h-9 w-9 items-center justify-center')}
-            aria-label="My Twitter profile"
-            title="My Twitter profile"
+            aria-label="My LinkedIn profile"
+            title="My LinkedIn profile"
           >
-            <TwitterIcon className={clsx('h-5 w-5')} />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://github.com/enjidev"
-            target="_blank"
-            rel="noreferrer nofollow"
-            className={clsx('flex h-9 w-9 items-center justify-center')}
-            aria-label="My GitHub profile"
-            title="My GitHub profile"
-          >
-            <GitHubIcon className={clsx('h-5 w-5')} />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://figma.com/@enjidev"
-            target="_blank"
-            rel="noreferrer nofollow"
-            className={clsx('flex h-9 w-9 items-center justify-center')}
-            aria-label="My Figma profile"
-            title="My Figma profile"
-          >
-            <FigmaIcon className={clsx('h-5 w-5')} />
+            <LinkedInIcon className={clsx('h-5 w-5')} />
           </a>
         </li>
       </ul>
@@ -184,32 +156,19 @@ function Footer() {
                     { title: 'Contact', href: '/work/contact' },
                     { title: 'Experience', href: '/work/experience' },
                     {
-                      title: 'Services',
-                      href: '/work/services',
-                      label: 'soon',
-                    },
-                    {
                       title: 'Skills and Tools',
                       href: '/work/skills-and-tools',
+                      label: 'soon',
                     },
-                    { title: 'Studio', href: '/work/studio' },
                   ]}
                 />
                 <FooterGroup
                   title="Learn"
                   links={[
                     {
-                      title: 'Docs',
-                      href: '/docs',
-                    },
-                    {
                       title: 'Personal Blog',
                       href: '/blog',
-                    },
-                    {
-                      title: 'T.I.L',
-                      href: '/today-i-learned',
-                      label: 'new',
+                      label: 'soon',
                     },
                   ]}
                 />
@@ -221,11 +180,6 @@ function Footer() {
                     {
                       title: 'Design Concept',
                       href: 'https://www.figma.com/community/file/1176392613303840973',
-                      isInternal: false,
-                    },
-                    {
-                      title: 'Source Code',
-                      href: 'https://github.com/enjidev/enji.dev',
                       isInternal: false,
                     },
                     {
