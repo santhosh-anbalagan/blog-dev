@@ -97,6 +97,10 @@ function CleanIntuitive() {
                   />
                 </div>
               )}
+
+              <div className={clsx('hidden', 'sm:block lg:hidden')}>
+                <TodoItem state={currentState ? currentState.state : 'iot'} />
+              </div>
             </div>
           </div>
         </div>
