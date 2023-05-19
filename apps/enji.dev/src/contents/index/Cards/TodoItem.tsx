@@ -20,8 +20,7 @@ function TodoItem({ state }: TodoItemProps) {
       )}
       role="presentation"
     >
-      <div> Details:</div>
-      {state === 'iot' && (
+      {state === 'iot' ? (
         <>
           <div
             className={clsx(
@@ -80,8 +79,7 @@ function TodoItem({ state }: TodoItemProps) {
             {'Bacnet | Modbus | DALI | TCP | FTP'}
           </div>
         </>
-      )}
-      {state === 'digitaltwin' && (
+      ) : state === 'digitaltwin' ? (
         <>
           <div
             className={clsx(
@@ -123,8 +121,7 @@ function TodoItem({ state }: TodoItemProps) {
             </div>
           </div>
         </>
-      )}
-      {state === 'augment' && (
+      ) : (
         <>
           <div
             className={clsx(
