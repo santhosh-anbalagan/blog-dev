@@ -180,7 +180,9 @@ function TodoItem({ state }: TodoItemProps) {
           'p-4 pl-12 text-sm text-slate-600',
           'dark:text-slate-400'
         )}
-      ></div>{' '}
+      >
+        {' '}
+      </div>
     </div>
   );
 }

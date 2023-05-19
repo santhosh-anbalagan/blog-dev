@@ -8,6 +8,9 @@ import SectionTitle from '@/components/sections/SectionTitle';
 import TodoItem from '@/contents/index/Cards/TodoItem';
 
 import type { TodoItemState } from '@/contents/index/Cards/TodoItem';
+import TodoItemIot from './Cards/TodoItemIot';
+import TodoItemAug from './Cards/TodoItemAug';
+import TodoItemDT from './Cards/TodoItemDT';
 
 type Content = {
   state: TodoItemState;
@@ -38,7 +41,7 @@ const content: Array<Content> = [
 ];
 
 function CleanIntuitive() {
-  const [currentState, setCurrentState] = useState<Content | null>(null);
+  const [currentState, setCurrentState] = useState<Content | null>(content[0]);
 
   return (
     <>
@@ -71,12 +74,29 @@ function CleanIntuitive() {
             <div
               className={clsx('-mt-8 flex gap-4', 'md:gap-6 lg:top-8 lg:mt-0')}
             >
-              <div>
-                <TodoItem state={currentState ? currentState.state : 'iot'} />
-              </div>
-              <div className={clsx('hidden', 'sm:block lg:hidden')}>
-                <TodoItem state={currentState ? currentState.state : 'iot'} />
-              </div>
+              {currentState && currentState.state === 'iot' && (
+                <div>
+                  <TodoItemIot
+                    state={currentState ? currentState.state : 'iot'}
+                  />
+                </div>
+              )}
+
+              {currentState && currentState.state === 'digitaltwin' && (
+                <div>
+                  <TodoItemDT
+                    state={currentState ? currentState.state : 'digitaltwin'}
+                  />
+                </div>
+              )}
+
+              {currentState && currentState.state === 'augment' && (
+                <div>
+                  <TodoItemAug
+                    state={currentState ? currentState.state : 'augment'}
+                  />
+                </div>
+              )}
             </div>
           </div>
         </div>
