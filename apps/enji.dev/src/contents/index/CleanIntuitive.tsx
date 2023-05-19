@@ -76,25 +76,19 @@ function CleanIntuitive() {
             >
               {currentState && currentState.state === 'iot' && (
                 <div>
-                  <TodoItemIot
-                    state={currentState ? currentState.state : 'iot'}
-                  />
+                  <TodoItemIot state="iot" />
                 </div>
               )}
 
               {currentState && currentState.state === 'digitaltwin' && (
                 <div>
-                  <TodoItemDT
-                    state={currentState ? currentState.state : 'digitaltwin'}
-                  />
+                  <TodoItemDT state="digitaltwin" />
                 </div>
               )}
 
               {currentState && currentState.state === 'augment' && (
                 <div>
-                  <TodoItemAug
-                    state={currentState ? currentState.state : 'augment'}
-                  />
+                  <TodoItemAug state="augment" />
                 </div>
               )}
 
