@@ -13,55 +13,44 @@ function ProjectsContents() {
   const [currentState, setCurrentState] = useState<'npm' | 'github'>('github');
 
   return (
-    <>
-      <SectionTitle
-        title=""
-        caption="tailwindcss-accent"
-        description=""
-        button={{
-          title: 'learn more',
-          href: '/docs/tailwindcss-accent',
-        }}
-      />
-      <SectionContent>
-        <div className={clsx('flex', 'lg:gap-12')}>
-          <div className={clsx('hidden flex-1 flex-col gap-3 pt-8', 'lg:flex')}>
-            <div className={clsx('flex flex-col gap-3')}>
-              <SectionButton
-                title="Available on GitHub"
-                icon={<GitHubIcon className={clsx('my-2 h-16 w-16')} />}
-                description="Access my hobby projects on mutiple languages."
-                active={currentState === 'github'}
-                onClick={() => setCurrentState('github')}
-              />
-            </div>
+    <SectionContent>
+      <div className={clsx('flex', 'lg:gap-12')}>
+        <div className={clsx('hidden flex-1 flex-col gap-3 pt-8', 'lg:flex')}>
+          <div className={clsx('flex flex-col gap-3')}>
+            <SectionButton
+              title="Available on GitHub"
+              icon={<GitHubIcon className={clsx('my-2 h-16 w-16')} />}
+              description="Access my hobby projects on mutiple languages."
+              active={currentState === 'github'}
+              onClick={() => setCurrentState('github')}
+            />
           </div>
-          <div className={clsx('w-full', 'lg:w-auto')}>
-            <div className={clsx('-mt-[41px]')}>
-              <div className={clsx('w-full', 'lg:h-[400px] lg:w-[600px]')}>
-                <AppWindow
-                  type="browser"
-                  browserTabs={[
-                    {
-                      icon: <GitHubIcon className="h-4 w-4" />,
-                      title: 'santhosh-anbalagan/blog-21 - GitHub',
-                      isActive: currentState === 'github',
-                    },
-                  ]}
-                >
-                  <GitHubWireframe
-                    author="santhosh-anbalagan"
-                    license=""
-                    repository="blog-21"
-                    description="A personal blog using Fjord Next.js."
-                  />
-                </AppWindow>
-              </div>
+        </div>
+        <div className={clsx('w-full', 'lg:w-auto')}>
+          <div className={clsx('-mt-[41px]')}>
+            <div className={clsx('w-full', 'lg:h-[400px] lg:w-[600px]')}>
+              <AppWindow
+                type="browser"
+                browserTabs={[
+                  {
+                    icon: <GitHubIcon className="h-4 w-4" />,
+                    title: 'santhosh-anbalagan/blog-21 - GitHub',
+                    isActive: currentState === 'github',
+                  },
+                ]}
+              >
+                <GitHubWireframe
+                  author="santhosh-anbalagan"
+                  license=""
+                  repository="blog-21"
+                  description="A personal blog using Fjord Next.js."
+                />
+              </AppWindow>
             </div>
           </div>
         </div>
-      </SectionContent>
-    </>
+      </div>
+    </SectionContent>
   );
 }
 
