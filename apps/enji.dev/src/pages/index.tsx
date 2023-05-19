@@ -10,7 +10,7 @@ function Index() {
       <Head
         title="Santhosh Zooz · Software Developer"
         description="a tech-savvy,an entrepreneur in making. Innovating, disrupting, and leaving my mark on the world, one code at a time."
-        ogImage={`${getBaseUrl()}/assets/images/og-image.png`}
+        ogImage={`${getBaseUrl()}/assets/images/sz-image.png`}
         overrideTitle
       />
       <IndexContents />
