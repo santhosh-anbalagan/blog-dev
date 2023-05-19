@@ -1,6 +1,7 @@
 import clsx from 'clsx';
 import { m, useAnimationControls } from 'framer-motion';
 import Image from 'next/image';
+import myGif from '../../../assets/giphy.gif';
 
 const animation = {
   hide: { x: -32, opacity: 0 },
@@ -25,7 +26,7 @@ function HeaderTitle() {
         animate={animation.show}
         transition={{ delay: 0.1 }}
       >
-        hi!
+        namaste!
         <m.div
           initial={{
             opacity: 0,
@@ -44,7 +45,7 @@ function HeaderTitle() {
           <Image
             className={clsx('w-7 md:w-10')}
             alt="Love-you Gesture"
-            src="/assets/emojis/love-you-gesture.png"
+            src={myGif}
             width={48}
             height={48}
             onLoadingComplete={() => {
@@ -70,9 +71,9 @@ function HeaderTitle() {
         >
           I&apos;m{' '}
           <strong className={clsx('text-accent-600', 'dark:text-accent-500')}>
-            Enji
+            Santhosh
           </strong>{' '}
-          Kusnadi,{' '}
+          Zooz,{' '}
         </m.span>
         <m.h1
           className={clsx(
@@ -91,10 +92,14 @@ function HeaderTitle() {
               'dark:text-slate-300'
             )}
           >
-            Front-End Developer
+            tech-savvy,an entrepreneur
           </strong>{' '}
-          who loves intuitive,{' '}
-          <span className={clsx('block')}>clean and modern UI design.</span>
+          in making.
+          <span className={clsx('block')}>
+            {' '}
+            Innovating, disrupting, & leaving my mark on the world, one code at
+            a time.
+          </span>
         </m.h1>
       </span>
     </div>
